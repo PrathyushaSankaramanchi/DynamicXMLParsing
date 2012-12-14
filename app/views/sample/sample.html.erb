@@ -1,0 +1,11 @@
+
+Variant Values : 
+<br/><br/>
+<%
+root = @variantVal
+root.flatten!
+root.each do |r| %>
+	<br/>
+	<% next if r.nil? %>	
+	<%=r.to_s%>		
+<%end%>
